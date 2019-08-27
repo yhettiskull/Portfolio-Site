@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+    color: #8859B6;
+    text-align: center;
+    margin: auto;
+}
+
+body {
+    background: #D4D4D4;
+}
+
+header {
+    background: #000;
+    position: sticky;
+    top: 0;
+}
+
+.headline {
+    margin: 20px;
+}
+
+ul {
+    list-style: none;
+}
+
+.main_info_container {
+    padding: 20px 13px;
+}
+
+.info_section {
+    background: #000;
+    margin: 20px;
+    min-height: 200px;
+}
+
+footer {
+    min-height: 170px;
+}

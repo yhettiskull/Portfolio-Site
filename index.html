@@ -1,36 +1,100 @@
 <!DOCTYPE html>
-    <html lang="eng">
+    <html lang="en">
         <head>
             <title>Nathan Lloyd: Portfolio</title>
             <meta name="viewport" content="width=device-width, initial-scale=1">
             <meta charset="UTF-8">
+            <link href="https://fonts.googleapis.com/css?family=Kosugi+Maru|Schoolbell&display=swap" rel="stylesheet">
             <link rel="stylesheet" type="text/css" href="Portfolio-Main.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         </head>
         <body>
-            <header class="hero" role="banner">
+            <div class="nav_container">
                 <nav>
-                    <a>Projects</a>
-                    <a>About Me</a>
-                    <a>Contact</a>
+                    <div class="nav_menu">
+                        <h3 class="menu_header">Nathan Lloyd</h3>
+                        <img class="menu_icon" src="https://user-images.githubusercontent.com/51301422/63886377-e212c080-c9c9-11e9-8827-3ba09f8b9a3c.png">
+                    </div>
                 </nav>
-                <h3 class="name_header">Nathan Lloyd</h3>
-            </header>
+            </div>
+            <div class="nav_items_container hidden">
+                <ul class="nav_items">
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="https://github.com/yhettiskull" target="_blank">GitHub</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
             <main role="main">
-                <h3 class="headline">Headline</h3>
+                <div class="headline_container">
+                    <div class="headline">
+                        <h3 class="headline_title">Hello, I’m:</h3>
+                        <h1 class="name">Nathan Lloyd</h1>
+                        <h5 class="headline_subtitle">( a Front-End Web Developer )</h5>
+                    </div>
+                </div>
+                <h4 class="icon_header">I Speak:</h4>
                 <div class="icon_container">
-                    <img class="head_shot">
                     <ul class="badge_icon_container">
-                        <li><img  class="badge_icon"></li>
-                        <li><img class="badge_icon"></li>
-                        <li><img class="badge_icon"></li>
+                        <li><img  class="badge_icon" src="https://user-images.githubusercontent.com/51301422/63909488-5a04d900-ca12-11e9-830a-5c7f7e035c06.png"></li>
+                        <li><img class="badge_icon" src="https://user-images.githubusercontent.com/51301422/63909485-58d3ac00-ca12-11e9-936d-48f9b2920819.png"></li>
+                        <li><img class="badge_icon" src="https://user-images.githubusercontent.com/51301422/63909491-5b360600-ca12-11e9-87d9-fb0aec3e7bb5.png"></li>
                     </ul>
                 </div>
-                <div class="main_info_container">
-                    <section class="info_section">Bio</section>
-                    <section class="info_section">Projects</section>
-                    <section class="info_section">About Me</section>
+                <div class="info_container">
+                    <section class="info_section">
+                        <h3 class="info_section_header">Bio :</h3>
+                        <p><b>I’m all about</b> cartoons, video games, and building gorgeous websites.
+                        As an all-around creative type, my greatest sense of pride comes from <b>creating immaculate</b> art; and I don’t see <b>programming</b> as anything less than <b>art.</b> 
+                        Loving what <b>I</b> do comes from getting to <b>create something</b> new, something <b>more</b>, something <b>exemplary, every day.</b> 
+                        To me, programming feels like being a wizard in this strange, technologically driven world.</p>
+                    </section>
+                    <section class="info_section" id="projects">
+                        <h3 class="info_section_header">Projects :</h3>
+                        <div id="projectsInfo">
+                            <h3 class="project_name">Nintendo Quiz App</h3>
+                            <div class="projects_hero">
+                                <img class="projects_image" src="https://user-images.githubusercontent.com/51301422/63953564-1ab9a500-ca71-11e9-9bc2-b9369d7abcdc.PNG">
+                            </div>
+                            <div class="projects_thumbnails">
+                                <a class="thumbnail" href="#"><img class="thumbnail_image" src="https://user-images.githubusercontent.com/51301422/63953564-1ab9a500-ca71-11e9-9bc2-b9369d7abcdc.PNG"></a>
+                                <a class="thumbnail" href="#"><img class="thumbnail_image" src="https://user-images.githubusercontent.com/51301422/63953566-1bead200-ca71-11e9-824c-6684716b2abc.PNG"></a>
+                                <a class="thumbnail" href="#"><img class="thumbnail_image" src="https://user-images.githubusercontent.com/51301422/63953567-1db49580-ca71-11e9-9c9f-e752ba9544a4.PNG"></a>
+                            </div>
+                            <div>
+                                
+                                <p>This is a small web app I created as a school project. I took a great deal of pride in going the extra mile anywhere I could
+                                    without spreading myself too thin, while still meeting the requirements for the project. A lot of my interest and character went into generating the final project you see. To build this app I utilized the best of HTML5 to hardcode the landing page. 
+                                    It was then styled with CSS3 after I built the necessary JavaScript functions to handle interactivity. I also made use of jQuery 
+                                    methods and event listeners to keep the code clean and concise.
+                                </p>
+                            </div>
+                            <div class="project_icon_container">
+                                <a href="https://github.com/yhettiskull/Nintendo-Quiz-App" target="_blank">
+                                    <img class="project_icon" src="https://user-images.githubusercontent.com/51301422/63956801-af72d180-ca76-11e9-9658-b838d4ab1b75.png">
+                                </a>
+                                <a href="https://yhettiskull.github.io/Nintendo-Quiz-App/" target="_blank">
+                                    <img class="project_icon" src="https://user-images.githubusercontent.com/51301422/63961270-f0bbaf00-ca7f-11e9-8a7f-24f8fc26d9dd.png">
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="info_section">
+                        <h3 class="info_section_header">More About Me :</h3>
+                        <p><p><b>Convincing a computer</b> to display what I want to see with HTML5, and how it should look with CSS3, feels like casting a spell to create a new landscape. 
+                            Instead of raising blocks of granite as mountains, I raise block-level elements as content. 
+                            Rather than controlling the winds and sea, I control positions and flex-box items. 
+                            Then, I enchant my new sanctum with life; with JavaScript. ES6 and jQuery give interactivity, and merriment to the otherwise static haven I’ve just molded. 
+                            Typing secret languages and incantations into a barren canvas, constructing a new land for users to visit, tenaciously writing line-after-line of code; 
+                            I am Nathan Lloyd, and I’m a Front-End Web Developer, who loves what he does.</p></p>
+                    </section>
                 </div>
             </main>
-            <footer role="contact-info">Contact Info</footer>
+            <footer role="contact-info" id="contact">
+                <h1>Hire Me Here</h1>
+                <address>
+                    <h2><a class="email_address" href="mailto:nathanlloyd11@gmail.com">nathanlloyd@gmail.com</a></h2>
+                </address>
+            </footer>
+            <script src="Portfolio.js"></script>
         </body>
     </html>

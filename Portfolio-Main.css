@@ -1,12 +1,14 @@
 * {
     box-sizing: border-box;
+    font-size: 16px;
     margin: auto;
 }
 
 body {
-    background: rgb(212, 212, 212);
-    color: rgb(136, 89, 182);
-    font-family: 'Schoolbell', cursive;
+    background: url(https://user-images.githubusercontent.com/51301422/64052590-951c1f00-cb6e-11e9-9bb7-575124d95503.jpg) center center no-repeat;
+    background-size: cover;
+    color: rgb(228, 204, 69);
+    font-family: 'Exo', sans-serif;
     margin: 0;
     padding: 0;
     width: 100vw;
@@ -14,10 +16,6 @@ body {
 
 .hidden {
     display: none;
-}
-
-.active {
-    background: rgb(136, 89, 182);
 }
 
 a {
@@ -35,33 +33,23 @@ a:visited {
 }
 
 .nav_menu {
-    background: rgb(0, 0, 0);
-    box-shadow: 0 0 12px black;
+    background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.65));
     display: flex;
     height: 43px;
     justify-content: space-between;
-    padding: 5px 0;
-}
-
-.menu_header {
-    left: 10px;
-    margin: 6px;
-    position: relative;
+    margin: 0;
+    padding: 0;
 }
 
 .menu_icon {
-    bottom: 5px;
+    color: rgb(197, 96, 19);
     cursor: pointer;
-    height: 43px;
-    margin: 0;
-    padding: 2px;
     position: relative;
-    right: 0px;
+    left: 120px;
 }
 
 .nav_items_container {
-    background: rgb(136, 89, 182);
-    box-shadow: 0 10px 12px rgb(0, 0, 0, 0.5);
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(197, 96, 19, 1));
     height: 40px;
     padding: 0;
     position: fixed;
@@ -71,6 +59,7 @@ a:visited {
 
 .nav_items {
     align-items: center;
+    color: black;
     display: flex;
     justify-content: space-between;
     margin: 8px;
@@ -83,6 +72,7 @@ ul {
 
 li {
     color: black;
+    font-weight: bold;
 }
 
 main {
@@ -96,37 +86,34 @@ main {
 }
 
 .headline {
-    background: black;
-    border: 2px solid rgb(136, 89, 182);
-    border-radius: 15px;
-    box-shadow: 1px 13px 20px black;
-    color: rgb(136, 89, 182);
-    font-family: 'Kosugi Maru', sans-serif;
+    color: rgb(228, 204, 69);
+    font-family: 'Vollkorn SC', serif;
     min-height: 75px;
     margin: 13px;
     padding: 10px 0;
     text-align: center;
 }
 
-.headline_title {
-    border-bottom: 2px solid rgb(136, 89, 182);
-    padding: 0 0 2px 0;
-    min-width: 100%;
-}
-
 .name {
-    color: #C9F227;
-    font-family: 'Schoolbell', cursive;
+    border-top: 1px solid rgb(228, 204, 69);
+    border-bottom: 1px solid rgb(228, 204, 69);
+    font-family: 'Vollkorn SC', serif;
+    font-size: 35px;
+    line-height: 35px;
+    padding: 5px;
+    width: 175px;
 }
 
 .headline_subtitle {
+    color: rgb(197, 96, 19);
     margin: 7px;
 }
 
 .icon_header {
-    font-family: 'Kosugi Maru', sans-serif;
+    font-family: 'Vollkorn SC', serif;
     margin: 40px auto 20px;
     text-align: center;
+    width: 85px;
 }
 
 .icon_container {
@@ -134,10 +121,12 @@ main {
 }
 
 .badge_icon_container {
+    border-bottom: 2px solid rgb(197, 96, 19);
+    border-radius: 100px;
     display: flex;
     justify-content: space-around;
     padding: 2px;
-    min-width: 80px;
+    max-width: 180px;
 }
 
 .badge_icon {
@@ -148,17 +137,20 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    max-width: 500px;
 }
 
 .info_section_header {
-    color: #C9F227;
-    font-family: 'Kosugi Maru', sans-serif;
+    color: rgb(228, 204, 69);
+    font-family: 'Vollkorn SC', serif;
+    font-size: 18px;
     margin: auto;
 }
 
 .info_section {
     background: rgba(0, 0, 0, 0.7);
     border-radius: 3px;
+    color: rgb(197, 96, 19);
     line-height: 27px;
     margin: 45px auto 15px;
     max-width: 80vw;
@@ -184,6 +176,7 @@ b {
 }
 
 .projects_image {
+    border-radius: 3px;
     height: 320px;
 }
 
@@ -208,12 +201,61 @@ b {
 
 #contact {
     color: black;
-    background: rgb(136, 89, 182);
+    background: rgb(197, 96, 19);
+    font-family: 'Vollkorn SC', serif;
     margin: 0 auto;
     padding: 12px 0;
     text-align: center;
 }
 
 .email_address {
-    color: #C9F227;
+    color: rgb(228, 204, 69);
+    font-family: 'Exo', sans-serif;
 }
+
+@media only screen and (min-width: 768px) {
+    .hidden {
+        display: inline;
+    }
+
+    .nav_menu {
+        display: none;
+    }
+
+    .nav_items_container {
+        background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.75));
+        height: 70px;
+        top: 0px;
+    }
+
+    .nav_items {
+        margin: 20px;
+    }
+
+    a {
+        color: rgb(228, 204, 69);
+    }
+    
+    a:visited {
+        color: rgb(228, 204, 69);
+    }
+
+    .name {
+    font-size: 48px;
+    line-height: 42px;
+    width: 220px;
+    }
+
+    .headline_subtitle {
+        font-size: 24px;
+    }
+
+    .icon_header {
+        font-size: 18px;
+    }
+
+    .info_section_header {
+        font-size: 24px;
+        margin: 0 auto 20px;
+    }
+} 

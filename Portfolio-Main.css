@@ -158,7 +158,7 @@ main {
 }
 
 b {
-    color: white;
+    color: seashell;
 }
 
 #projectsInfo {
@@ -209,8 +209,14 @@ b {
 }
 
 .email_address {
-    color: rgb(228, 204, 69);
+    color: seashell;
     font-family: 'Exo', sans-serif;
+    margin: 10px;
+}
+
+.contact_icon {
+    height: 40px;
+    margin: 8px;
 }
 
 @media only screen and (min-width: 768px) {

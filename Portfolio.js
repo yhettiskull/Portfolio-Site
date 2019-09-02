@@ -1,6 +1,5 @@
 
 $('.menu_icon').on('click', function(event) {
-    $(this).toggleClass('active');
     $('.nav_items_container').slideToggle(250);
 });
 
@@ -12,4 +11,8 @@ $('.thumbnail').on('click', function(event) {
         'src': imgSrc,
         'alt': imgAlt
     });
+});
+
+$('.description_display').on('click', function(event) {
+    $('.project_description').slideToggle(250);
 });

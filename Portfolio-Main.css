@@ -268,4 +268,8 @@ b {
     .description_header {
         display: none;
     }
+
+    .project_description {
+        display: inline;
+    }
 } 

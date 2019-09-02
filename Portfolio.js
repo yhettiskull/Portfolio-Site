@@ -13,6 +13,6 @@ $('.thumbnail').on('click', function(event) {
     });
 });
 
-$('.description_display').on('click', function(event) {
+$('.description_header').on('click', function(event) {
     $('.project_description').slideToggle(250);
 });

@@ -161,6 +161,10 @@ b {
     color: seashell;
 }
 
+#projects {
+    min-width: 80vw;
+}
+
 #projectsInfo {
     display: flex;
     flex-direction: column;
